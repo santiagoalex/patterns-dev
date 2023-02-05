@@ -1,0 +1,32 @@
+[
+  {
+    "category": "Tech",
+    "retweets": "54",
+    "isLocal": false,
+    "text": "Chat gpt esta vivo"
+  },
+  {
+    "category": "Entertaiment",
+    "retweets": "4",
+    "isLocal": false,
+    "text": "Dios un tweet"
+  },
+  {
+    "category": "Tech",
+    "retweets": "2",
+    "isLocal": false,
+    "text": "Midu dev un referente en el desarrollo web"
+  },
+  {
+    "category": "twich",
+    "retweets": "34",
+    "isLocal": false,
+    "text": "Manz Dev se hace unas cosas loquisimas con Css y esta vivo"
+  },
+  {
+    "category": "Entertaiment",
+    "retweets": "14",
+    "isLocal": false,
+    "text": "Dios un señor tweet"
+  }
+]
