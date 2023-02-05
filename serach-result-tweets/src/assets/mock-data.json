@@ -14,8 +14,8 @@
   {
     "category": "Tech",
     "retweets": "2",
-    "isLocal": false,
-    "text": "Midu dev un referente en el desarrollo web"
+    "isLocal": true,
+    "text": "Midu dev un referente en el desarrollo web un dios practicamente"
   },
   {
     "category": "twich",
@@ -26,7 +26,7 @@
   {
     "category": "Entertaiment",
     "retweets": "14",
-    "isLocal": false,
+    "isLocal": true,
     "text": "Dios un señor tweet"
   }
 ]
