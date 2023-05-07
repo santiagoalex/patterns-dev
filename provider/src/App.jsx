@@ -1,12 +1,25 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { ThemeCtx } from "./context/ThemeContext";
+import Toggle from "./Toggle/Toggle";
+import List from "./List/List";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const { ThemeContext } = ThemeCtx;
+  // const { useContextTheme, ThemeContext } = ThemeCtx;
+  // const { theme } = useContextTheme();
 
-  return <></>;
+  return (
+    <>
+      {/* <div className={`App theme-${theme}`}> */}
+      <div className={`App theme-`}>
+        <ThemeContext>
+          <Toggle />
+          <List />
+        </ThemeContext>
+      </div>
+      <h1>carga</h1>
+    </>
+  );
 }
 
 export default App;

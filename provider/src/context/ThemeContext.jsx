@@ -1,5 +1,5 @@
 import React, { createContext, useState, useContext } from "react";
-
+import PropTypes from "prop-types";
 const themes = {
   ligth: {
     background: "#fff",
@@ -27,3 +27,7 @@ const ThemeProvider = ({ children }) => {
 const useContextTheme = () => useContext(ThemeContext);
 
 export const ThemeCtx = { ThemeContext: ThemeProvider, useContextTheme };
+
+ThemeProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
