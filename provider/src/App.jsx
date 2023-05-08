@@ -17,7 +17,6 @@ function App() {
           <List />
         </ThemeContext>
       </div>
-      <h1>carga</h1>
     </>
   );
 }

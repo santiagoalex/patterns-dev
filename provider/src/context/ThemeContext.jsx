@@ -1,15 +1,6 @@
-import React, { createContext, useState, useContext } from "react";
+import { createContext, useState, useContext } from "react";
 import PropTypes from "prop-types";
-const themes = {
-  ligth: {
-    background: "#fff",
-    color: "#000",
-  },
-  dark: {
-    background: "#000",
-    color: "#fff",
-  },
-};
+import themes from "./themes";
 
 export const ThemeContext = createContext();
 
@@ -20,8 +11,16 @@ const ThemeProvider = ({ children }) => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
-  const data = { theme: themes[theme], changeTheme };
-  return <ThemeContext.Provider value={data}>{children}</ThemeContext.Provider>;
+  const contextData = {
+    theme: themes[theme],
+    changeTheme,
+  };
+
+  return (
+    <ThemeContext.Provider value={contextData}>
+      {children}
+    </ThemeContext.Provider>
+  );
 };
 
 const useContextTheme = () => useContext(ThemeContext);

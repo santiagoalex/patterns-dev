@@ -3,10 +3,8 @@ import { ThemeCtx } from "../context/ThemeContext";
 
 function Toggle() {
   const { useContextTheme } = ThemeCtx;
-  const { ChangeTheme } = useContextTheme();
-  console.log("ChangeTheme", useContextTheme());
-  console.log("ChangeTheme2", ChangeTheme());
 
+  const { changeTheme } = useContextTheme();
   return (
     <section>
       <div>
@@ -15,7 +13,7 @@ function Toggle() {
             type="checkbox"
             name=""
             id="toggle-theme"
-            onClick={ChangeTheme()}
+            onClick={changeTheme}
           />
           <span className="slider round"></span>
         </label>
