@@ -1,10 +1,9 @@
-import React from "react";
-import { ThemeCtx } from "../context/ThemeContext";
+import React, { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 function Toggle() {
-  const { useContextTheme } = ThemeCtx;
+  const { changeTheme } = useContext(ThemeContext);
 
-  const { changeTheme } = useContextTheme();
   return (
     <section>
       <div>

@@ -1,21 +1,21 @@
-import { ThemeCtx } from "./context/ThemeContext";
+import { ThemeProvider } from "./context/ThemeContext";
+
 import Toggle from "./Toggle/Toggle";
 import List from "./List/List";
 import "./App.css";
 
 function App() {
-  const { ThemeContext } = ThemeCtx;
-  // const { useContextTheme, ThemeContext } = ThemeCtx;
-  // const { theme } = useContextTheme();
+  // console.log("Valor del contexto", useContext(ThemeContext));
+  // const { ThemeProvider } = useContext(ThemeContext);
 
   return (
     <>
       {/* <div className={`App theme-${theme}`}> */}
       <div className={`App theme-`}>
-        <ThemeContext>
+        <ThemeProvider>
           <Toggle />
           <List />
-        </ThemeContext>
+        </ThemeProvider>
       </div>
     </>
   );

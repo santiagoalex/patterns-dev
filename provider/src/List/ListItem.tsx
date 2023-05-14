@@ -1,10 +1,10 @@
-import React from 'react'
-import { ThemeCtx } from '../context/ThemeContext'
+import React, { useContext } from 'react'
+import { ThemeContext } from '../context/ThemeContext'
 
 
 function ListItem() {
-  const { useContextTheme } = ThemeCtx
-  const { theme } = useContextTheme()
+
+  const { theme } = useContext(ThemeContext)
   return (
     <li style={theme}>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ad? Velit aspernatur nisi totam accusantium ex reprehenderit pariatur inventore veritatis?
