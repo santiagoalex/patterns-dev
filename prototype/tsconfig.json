@@ -1,0 +1,6 @@
+{
+  "include": [
+    "./*.ts",
+    "dog-extensions.d.ts" // Nombre del archivo de declaración ambiental
+  ]
+}
